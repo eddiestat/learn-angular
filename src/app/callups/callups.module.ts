@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CreateCallupComponent } from "./create-callup/create-callup.component";
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import {FormsModule} from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -10,9 +11,9 @@ import { CommonModule } from '@angular/common';
   ],
   exports: [
   	CreateCallupComponent
-  ],
+    ],
   imports: [
-  	NgbModule,FormsModule,CommonModule
+  	NgbModule,FormsModule,CommonModule, HttpClientModule
   ],
   providers: []
 })
